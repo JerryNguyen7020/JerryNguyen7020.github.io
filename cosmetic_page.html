@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" href="" sizes="35x35" type="image/jpg">
+  <meta charset="UTF-8">
+  <title>Dental | Cosmetic</title>
+  <link rel="stylesheet"href="css/bootstrap.css">
+  <script src="js/bootstrap.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Manrope">
+  <style>
+    nav.navbar {
+      background-color: #92a3b3;
+    }
+    nav.navbar a {
+      color: #f6f7f1;
+      font-family: Manrope;
+      font-size: 2rem;
+      font-weight: lighter;
+      background-color: #92a3b3;
+    }
+    nav.navbar a:hover {
+      color: #445970;
+    }
+    nav.navbar a:focus {
+      color: #506c84;
+    }
+    li {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+    #current {
+      font-weight: bolder;
+    }
+    .masthead{
+      background-size: cover;
+      min-height: 100vh;
+      position: relative;
+      color: white;
+      align-items: center;
+      align-content: center;
+    }
+    #overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, .5);
+      padding-left: 3rem;
+    }
+    p {
+      font-family: Manrope;
+      font-size: 1.75rem;
+      color: #e9ebe8;
+      font-weight: lighter;
+      margin-top: 0.8rem;
+    }
+    h2 {
+      font-family: Manrope;
+      font-size: 3.5rem;
+      color: #e9ebe8;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    #book-button {
+      background-color: #f6f7f1;
+      color: #445970;
+      width: 33rem;
+      height: 4rem;
+      font-size: 2rem;
+      border-radius: .75rem;
+    }
+    #service1 {
+      position: relative;
+      background-color: #92A3B3;
+      height: 100.2vh;
+    }
+    #service1-left {
+      background-color: #f6f7f1;
+      height: 97vh;
+      width: border-box;
+      margin-top: 1.5rem;
+      margin-left: 0rem;
+      position: relative;
+    }
+    #service1-left-head {
+      font-size: 2rem;
+      font-family: Manrope;
+      font-weight: lighter;
+      color: #445970;
+      padding-left: 2.5rem;
+    }
+    #des-left {
+      font-size: 1.25rem;
+      font-family: Manrope;
+      font-weight: lighter;
+      color: #445970;
+      padding-left: 2.5rem;
+      padding-right: 3rem;
+    }
+    #service1-right {
+      max-width: 100%;
+      max-height: 80%;
+      margin-top: 5.5rem;
+      object-fit: contain;
+    }
+    #cosmetic-transition {
+      background-size: cover;
+      position: relative;
+      align-items: center;
+      align-content: center;
+    }
+    #quote {
+      text-align: center;
+      font-size: 2.5rem;
+      color: white;
+      font-family: Manrope;
+      font-weight: lighter;
+    }
+    #service2 {
+      position: relative;
+      background-color: #92A3B3;
+      height: 90vh;
+    }
+    #service2-right-head {
+      font-size: 2rem;
+      font-family: Manrope;
+      font-weight: lighter;
+      color: #f6f7f1;
+      padding-left: 2.5rem;
+      margin-top: 6rem;
+    }
+    #des-right {
+      font-size: 1.25rem;
+      font-family: Manrope;
+      font-weight: lighter;
+      color: #f6f7f1;
+      padding-left: 2.5rem;
+      padding-right: 5rem;
+    }
+    #service2-left {
+      max-width: 100%;
+      max-height: 80%;
+      margin-left: 3rem;
+      object-fit: contain;
+    }
+    img.img {
+      width: 1.75rem;
+      height: 2.5rem;
+    }
+    #secondRow {
+      padding-left: 8.75rem;
+    }
+    #phone {
+      height: 2.5rem;
+      width: 1.75rem;
+    }
+    #hotline {
+      height: 2.75rem;
+    }
+    #icons {
+      width: 2.5rem;
+    }
+    #links {
+      text-decoration-line: none;
+      color: #445970;
+    }
+    #links:hover {
+      color: #99aaba;
+    }
+    #endOfPage {
+      min-height: 60vh;
+      background-color: #f6f7f1;
+    }
+    div.col-sm-6 {
+      color: #445970;
+      font-family: Manrope;
+      font-size: 2rem;
+      font-weight: lighter;
+      justify-items: center;
+      padding-left: 5.5rem;
+    }
+  </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="./images/cinqueterre.jpg" alt="Avatar Logo" style="width:40px;" class="rounded-pill justify-content-start">
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="general_page.html">General</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="current" href="cosmetic_page.html">Cosmetic</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Restorative.html">Restorative</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about_page.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="booking%20status.html">Book</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div
+    class="masthead d-flex justify-content-center align-items-center"
+    style="background-image: url('./images/cos-headpic.png')"
+>
+  <div class="container-fluid d-flex flex-column justify-content-end" id="overlay">
+    <p>Cosmetic Dentistry in Ottawa</p>
+    <h2>Everyone deserves a <br>bright smile</h2>
+    <a href="booking%20status.html" id="book-button" type="button" class="btn">Book online</a>
+    <p>Call or Text: 000-000-0000</p>
+  </div>
+</div>
+
+<div class="container-fluid d-flex" id="service1">
+  <div class="row">
+    <div class="col-sm-6">
+      <div class="container-fluid d-flex flex-column justify-content-center align-items-stretch" id="service1-left">
+        <h2 id="service1-left-head">Service1Service1 ($$-$$$)</h2>
+        <p id="des-left">
+          description description description
+          description description description
+          description description description
+          description description description
+          description description description
+          description description description
+          description description description
+          description description description
+          description description description
+        </p>
+      </div>
+    </div>
+    <div class="col-sm-6 justify-content-end align-items-end">
+      <img src="./images/c-s1.jpg" id="service1-right">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid d-flex flex-sm-column justify-content-center align-items-center"
+     style="background-image: url('./images/cosmetic-trans.png')"
+     id = "cosmetic-transition"
+>
+  <p id="quote">
+    Your smile is one of the first noticed<br>
+    thing, lets make it shine
+  </p>
+</div>
+
+<div class="container-fluid d-flex" id="service2">
+  <div class="row">
+    <div class="col-sm-6 justify-content-end align-items-end">
+      <img src="./images/c-s2.jpg" id="service2-left">
+    </div>
+    <div class="col-sm-6 justify-content-center align-items-center">
+      <h2 id="service2-right-head">Service2Service2 ($$-$$$)</h2>
+      <p id="des-right">
+        description description description
+        description description description
+        description description description
+        description description description
+        description description description
+        description description description
+        description description description
+        description description description
+        description description description
+      </p>
+    </div>
+
+  </div>
+</div>
+
+<div class="container-fluid d-flex flex-column" id="endOfPage">
+  <div class="row mt-lg-5 pt-4">
+    <div class="col-sm-6">
+      <img src="./images/location.png" class="img" alt="location">
+      : 35 ABC Street, ______ <br>
+    </div>
+    <div class="col-sm-6">
+      <img src="./images/facebook.png" class="img" id="icons" alt="facebook">
+      :
+      <a href="#" id="links">facbooklinkhere</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6" id="secondRow">
+      Ottawa, Ontario, Canada
+    </div>
+    <div class="col-sm-6">
+      <img src="./images/instagram.png" class="img" id="icons" alt="Instagram">
+      :
+      <a href="#" id="links">instagramlinkhere</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="./images/phone.png" class="img" id="phone" alt="phone">
+      : 000-000-0000
+    </div>
+    <div class="col-sm-6">
+      <img src="./images/twitter.png" class="img" id="icons" alt="twitter">
+      :
+      <a href="#" id="links">twitterlinkhere</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="./images/hotline_blu.png" class="img" id="hotline" alt="hotline">
+      : 000-000-0000
+    </div>
+    <div class="col-sm-6">
+      <img src="./images/Linked In.png" class="img" id="icons" alt="LinkedIn">
+      :
+      <a href="#" id="links">LinkedInlinkhere</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6">
+      <img src="./images/clock.png" class="img" alt="workhour">
+      : Mon-Fri: __:__ - __:__
+    </div>
+    <div class="col-sm-6">
+      <img src="./images/mail.png" class="img" id="icons" alt="mail">
+      :
+      <a href="#" id="links">Emailaddresslinkhere</a>
+
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-6" id="secondRow">
+      Weekends: __:__ - __:__
+    </div>
+    <div class="col-sm-6"></div>
+  </div>
+</div>
+</body>
+</html>
